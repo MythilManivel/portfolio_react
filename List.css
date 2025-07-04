@@ -1,0 +1,180 @@
+.list {
+  padding: 3rem 2rem;
+  background: #1e293b;
+}
+
+.list h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #f1f5f9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+.card {
+  background: #ffffff;
+  color: #1e293b;
+}
+.card h3 {
+  color: #1e3a8a;
+}
+.card p {
+  color: #475569;
+}
+.card {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+}
+.content h2, .list h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1rem;
+}
+.list h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: #f1f5f9;
+}
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.8rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #1e293b;
+  text-align: left;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #0ea5e9; /* sky blue */
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #334155; /* slate dark */
+}
+/* ========== flip‑card base ========= */
+.flip-card {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  border-radius: 1rem;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* front & back share card styles you already had */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+/* front overrides */
+.flip-card-front {
+  background: #ffffff;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.flip-card-front h3 {
+  font-size: 1.1rem;
+  color: #0ea5e9;
+}
+
+/* back overrides */
+.flip-card-back {
+  background: #111827;
+  color: #d1d5db;
+  transform: rotateY(180deg);
+  padding: 1.5rem 1.25rem;
+}
+
+.flip-card-back p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* keep grid gap etc. as you had */

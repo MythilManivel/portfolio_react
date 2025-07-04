@@ -1,0 +1,50 @@
+.internships {
+  padding: 2rem 3rem;
+  background-color: #f8fafc;
+}
+
+.internships h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.internship-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.internship-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.internship-card:hover {
+  transform: translateY(-6px);
+}
+
+.internship-icon {
+  font-size: 2.2rem;
+  color: #2563eb;
+  margin-bottom: 0.8rem;
+}
+
+.internship-card h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin-bottom: 0.3rem;
+}
+
+.internship-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}

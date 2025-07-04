@@ -1,0 +1,76 @@
+.achievements {
+  padding: 3rem 2rem;
+  background: #0f172a;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 2.2rem;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+}
+
+/* Timeline container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  border-left: 3px solid #38bdf8;
+}
+
+/* Individual items */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Dot marker */
+.timeline-item::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #38bdf8;
+  border-radius: 50%;
+  border: 2px solid #0f172a;
+  position: absolute;
+  left: -9px;
+  top: 0.3rem;
+}
+
+/* Text content */
+.timeline-item span {
+  display: block;
+  text-align: left;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Emoji + text */
+.timeline-item span strong {
+  display: inline-block;
+  font-weight: 600;
+  color: #facc15;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .timeline {
+    border-left: 2px solid #38bdf8;
+    padding-left: 0.5rem;
+  }
+  .timeline-item {
+    flex-direction: row;
+    gap: 0.75rem;
+  }
+  .timeline-item::before {
+    left: -10px;
+  }
+}
